@@ -58,12 +58,22 @@ class UserProfiles extends React.Component {
       <div>
       {this.state.profiles.map(function(d, idx){
         return (
-		<div className={idx}>
-			<img alt='Image' src={d.image}></img>
-			<h1>{d.name.first} {d.name.last} </h1>
-			<p>{d.location.city}, {d.location.state} </p>
-			<div>{d.phone}</div>
-			<div>{d.email}</div>
+		<div id={idx} className="profile">
+			<img className="image" alt='Profile Image' src={d.image}></img>
+			<div className="personal-info">
+				<h2 className="name">{d.name.first} {d.name.last} </h2>
+				<div className="location">{d.location.city}, {d.location.state} </div>
+			</div>
+			<div className="contact-info">
+				<div className="phone">
+					<div className="title">Phone</div>
+					<div className="value">{d.phone}</div>
+				</div>
+				<div className="email">
+					<div className="title">Email</div>
+					<div className="value">{d.email}</div>
+				</div>
+			</div>
 		</div>
 		)
       })}

@@ -1,5 +1,57 @@
 .application {
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;
+	max-width: 500px;
+}
+
+
+.header {
+		background-color: #f86d69;
+		display: inline-block;
+		width: 100%;
+		line-height: 48px;
+}
+
+.profile {
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	clear: both;
+	margin: 1em 0;
+	box-shadow: 0px 5px 5px #ccc;
+}
+
+.profile .personal-info {
+	width: 80%;
+	float: left;
+}
+
+.profile .contact-info {
+		background-color: #f86d69;
+		display: inline-block;
+		width: 100%;
+		color: white;
+		text-align: center;
+
+}
+
+.profile .contact-info .email,
+.profile .contact-info .phone {
+	width: 50%;
+	display: inline-block;
+}
+
+.profile .image {
+	float: left;
+	width: 20%;
+	border-radius: 50%;
+}
+
+.profile .name {
+	color: #f86d69; 
+	font-size: 1em;
+}
+
+.profile .location {
+	color: #a9a9a9;
 }
