@@ -29,7 +29,7 @@ class UserProfiles extends React.Component {
   .then(data => {
 	  const profile = {
 			name: data.results[0].name, 
-			image: data.results[0].picture.thumbnail,
+			image: data.results[0].picture.large,
 			email: data.results[0].email, 
 			phone: data.results[0].cell, 
 			location: {city: data.results[0].location.city, state: data.results[0].location.state}
