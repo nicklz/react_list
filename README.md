@@ -1,3 +1,3 @@
 ## Installation: 
 
-npm install && yarn start
+yarn && yarn start
